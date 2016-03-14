@@ -1,4 +1,4 @@
-# Kumamoto-team
+# Kumamon-team
 熊本战队代码大本营
 
 # 成员
