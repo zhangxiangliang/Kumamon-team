@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    background: #fff;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 20px 50px 0px 50px;
+    height: 60px;
+}
+#header h1{
+    float: left;
+}
+#header nav{
+    float: right;
+}
+#header nav ul{
+    list-style: none;
+}
+#header nav li{
+    margin-left: 20px;
+    padding-top: 10px;
+    float: left;
+    display: block;
+}
+#header nav li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+#header nav li a:hover {
+    color: #dcdcdc;
+}
+#container article{
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    margin: 10px;
+}
+#container article::after{
+    content:"";
+    display:block;
+    height:0;
+    clear:both;
+}
+#container article .header{
+    margin: 5px 0;
+}
+#container article .header h1{
+    font-size: 2em;
+}
+#container article .header h2{
+    margin-top: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+#container article .content img{
+    margin: 10px;
+}
+#container article .content p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+#container article .content ol{
+    margin: 10px;
+    margin-left: 15px;
+}
+#container article .content ul{
+    margin: 10px;
+    margin-left: 15px;
+}
+#container article .content figure{
+    float: left;
+    width: 200px;
+    border: 1px solid #dcdcdc;
+}
+#container article .content figure p{
+    margin-top: 10px;
+    text-align: center;
+}
+#container article .content figure img{
+    width: 180px;
+    height: 180px;
+}
+#container article .content table{
+    width: 100%;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+
+#container article .content table thead {
+	background-color: #F9FAFB;
+	font-weight: bold;
+	text-align: left;
+}
+#container article .content table tfoot {
+	background-color: #ccc;
+	font-weight: bold;
+}
+#container article .content table th,td {
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+#container aside{
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    margin: 10px;
+}
+#container aside h1{
+    padding-left: 5px;
+    font-size: 2em;
+    border-left: 8px solid #dcdcdc;
+}
+#container aside::after{
+    content:"";
+    display:block;
+    height:0;
+    clear:both;
+}
+#container aside form{
+    width: 90%;
+    float: right;
+}
+#container aside form .form-group{
+    width: 100%;
+    margin-top: 10px;
+}
+#container aside form .form-group .form-inline{
+    display: inline-block;
+	text-align: right;
+	width: 40%;
+}
+#container aside form .form-group .form-item{
+    display: inline-block;
+	vertical-align: text-top;
+}
+#container aside form .form-group p{
+    margin-top: 5px;
+    color: #9E9797;
+    font-size: 0.5em;
+}
+#container aside form .form-group input[type="submit"]{
+    padding:5px;
+    border-radius: 3px;
+    border: 1px solid #E6E6E6;
+    background-color: #E6E6E6;
+    cursor: pointer;
+    width: 100%;
+}
+#container aside form input{
+    padding: 5px;
+    color: #666;
+    border: 1px solid #E6E6E6;
+    border-radius: 3px;
+}
+#container aside form textarea{
+    vertical-align: text-top;
+	width: 50%;
+	height: 10em;
+}
+#footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-top: 1px solid #dcdcdc;
+}
+@media  (max-width:768px) {
+    #header{
+        text-align: center;
+    }
+    #header nav{
+        float: none;
+        text-align: center;
+    }
+    #header nav li{
+        margin-left: 5px;
+        margin-right: 5px;
+        float: none;
+        display:inline-block;
+    }
+    #header h1{
+        float: none;
+    }
+    #container aside form{
+        width: 100%;
+        float: right;
+    }
+}
