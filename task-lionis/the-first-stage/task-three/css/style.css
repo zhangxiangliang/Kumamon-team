@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    padding: 20px;
+    min-width: 600px;
+}
+.container{
+    padding: 20px;
+    background: #eee;
+    border: 1px solid #999;
+}
+#left{
+    width: 160px;
+    float: left;
+    padding: 20px;
+    border: 1px solid #999;
+    background: #fff;
+}
+#left .kumamon-logo{
+    margin: 0px;
+    float: left;
+}
+#left h1{
+    width: 180px;
+    text-align: center;
+    font-size: 8px;
+}
+#center{
+    margin-left: 220px;
+    margin-right: 140px;
+    padding: 20px;
+    border: 1px solid #999;
+    background: #fff;
+}
+#center h1, h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#center h2{
+    font-size: 20px;
+}
+#right{
+    width: 120px;
+    float: right;
+    border: 1px solid #999;
+    background: #fff;
+}
+.kumamon-logo{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #999;
+    margin: 20px;
+    display: block;
+    float: left;
+}
+.container:after{
+    content:'';
+    width:0;
+	height: 0;
+	display: block;
+	clear: both;
+}
