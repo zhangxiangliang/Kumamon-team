@@ -99,8 +99,12 @@ body {
 }
 #synopsis .content p{
   margin-top: 40px;
-  border-left: 2px solid #989899;
 }
+#synopsis .content:not(:first-child) p {
+  border-left: 2px solid #989899;
+
+}
+
 #dont-know {
   padding-top: 90px;
   text-align: center;
@@ -150,15 +154,186 @@ body {
   background: #F8F8F8;
 }
 #activist article {
+  position: relative;
   text-align: center;
   width: 25%;
   float: left;
 }
-#activist article img{
+#activist article img {
   background: #fff;
   padding: 10px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 #activist article p {
   color: #B5B5B5;
+}
+
+#activist article.active img{
+  margin-top: 50px;
+}
+#activist article.active .content {
+  margin-top: -390px;
+}
+#activist article.active .content h3 {
+  text-indent: 40px;
+  letter-spacing: 40px;
+}
+#information {
+  height: 1040px;
+}
+#information .carrousel-left {
+  padding-top: 120px;
+  color: #fff;
+  text-align: center;
+  float: left;
+  width: 66%;
+  height: 560px;
+  position: relative;
+  background-image: url(../images/carrousel-01.jpg);
+}
+#information .carrousel-left img {
+  position: absolute;;
+  right: 0px;
+  margin-top: -40px;
+  top: 50%;
+}
+#information .carrousel-left h2 {
+  font-size: 50px;
+}
+#information .carrousel-left p {
+  margin-top: 15px;
+}
+#information .carrousel-left h2.super {
+  margin-top: 0px;
+  font-weight:300;
+  font-size: 160px;
+  line-height: 120px;
+  margin-bottom: 40px;
+}
+#information .carrousel-right {
+  float: left;
+  width: 33%;
+  height: 560px;
+  position: relative;
+}
+#information .carrousel-right h2 {
+  margin-top: 130px;
+  text-align: center;
+}
+#information .carrousel-right p {
+  padding: 20px 80px;
+  font-size: 10px;
+  line-height: 30px;
+  color: #aaa;
+}
+#information .carrousel-right .red{
+  color: #E74F4D;
+}
+#information .article {
+  position:relative;
+  padding-top: 160px;
+  text-align: center;
+  float: left;
+  width: 33%;
+  height: 480px;
+}
+#information .article .header:after {
+  position: relative;
+  left: 50%;
+  content: "";
+  display: block;
+  margin-left: -25px;
+  width: 50px;
+  border-bottom: 2px solid white;
+}
+#information .photo {
+  background-image: url(../images/information-photo.jpg);
+}
+#information .photo img{
+  position: absolute;
+  left: 0px;
+  top: 50%;
+
+}
+#information .article a {
+  margin: 20px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 60px;
+  border: 1px solid white;
+}
+#information .article.red {
+  background: #E74F4D;
+  color: white;
+}
+#information .white a{
+  margin: 20px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 60px;
+  border: 1px solid #E74F4D;
+  color: #E74F4D;
+}
+#information .white .header:after {
+  position: relative;
+  left: 50%;
+  content: "";
+  display: block;
+  margin-left: -25px;
+  width: 50px;
+  border-bottom: 2px solid #aaa;
+}
+#information .carrousel-right a {
+  display: inline-block;
+  color: #E74F4D;
+  text-decoration: none;
+  padding: 10px 50px;
+  border: 1px solid #E74F4D;
+  position: absolute;
+  margin: 0 120px;
+}
+#join-us {
+  margin-top: 110px;
+  height: 690px;
+}
+#join-us .header {
+  position: relative;
+  text-align: center;
+}
+#join-us .header h2::after{
+  margin-top: 10px;
+  content: "";
+  width: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  display: block;
+  border-bottom: 2px solid #E74F4D;
+}
+#join-us .header p{
+  margin-top: 25px;
+  color: #aaa;
+}
+#footer {
+  height: 380px;
+}
+#footer .top {
+  background: #32353E;
+  height: 335px;
+}
+#footer .bottom {
+  padding-top: 20px;
+  height: 45px;
+  color: #fff;
+  background: #2F2F38;
+  font-size: 10px;
+}
+#footer .bottom .left {
+  float: left;
+  padding-left: 90px;
+}
+#footer .bottom .right {
+  float: right;
+  padding-right: 50px;
 }
