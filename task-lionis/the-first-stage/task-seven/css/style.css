@@ -294,7 +294,7 @@ body {
   margin: 0 120px;
 }
 #join-us {
-  margin-top: 110px;
+  padding-top: 110px;
   height: 690px;
 }
 #join-us .header {
@@ -302,7 +302,7 @@ body {
   text-align: center;
 }
 #join-us .header h2::after{
-  margin-top: 10px;
+  padding-top: 10px;
   content: "";
   width: 40px;
   position: absolute;
@@ -312,8 +312,63 @@ body {
   border-bottom: 2px solid #E74F4D;
 }
 #join-us .header p{
-  margin-top: 25px;
+  padding-top: 20px;
   color: #aaa;
+}
+#join-us .container {
+  padding-top: 100px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+#join-us .container .left {
+  width: 33%;
+  float: left;
+}
+#join-us .container .left artile {
+  display: block;
+  margin-bottom: 55px;
+}
+#join-us .container .left artile h2{
+  color: #6A6564;
+  font-size: 15px;
+}
+#join-us .container .left artile p{
+  color: #B7B6B6;
+  font-size: 10px;
+}
+#join-us .container .left artile a{
+  color: #B7B6B6;
+  font-size: 10px;
+  text-decoration: none;
+  float: right;
+  background: url(../images/up-arrow.png) no-repeat left;
+  margin-top:  10px;
+  padding-left: 15px;
+}
+#join-us .right {
+  padding-left: 30px;
+  float: left;
+  width: 66%;
+}
+#join-us .right input {
+  padding-left: 5px;
+  height: 40px;
+  width: 49%;
+  margin-bottom: 10px;
+  background-color: #EDEDEF;
+  border: none;
+}
+#join-us .right textarea {
+  padding-left: 5px;
+  height: 120px;
+  width: 99%;
+  margin-bottom: 10px;
+  background-color: #EDEDEF;
+  border: none;
+}
+#join-us .right input[type="button"] {
+  width: 99%;
+  color: #5E5E5E;
 }
 #footer {
   height: 380px;
@@ -321,6 +376,41 @@ body {
 #footer .top {
   background: #32353E;
   height: 335px;
+}
+#footer .top .container {
+  padding-top: 80px;
+  color: #fff;
+  width: 500px;
+  margin: 0 auto;
+}
+#footer .top .container .header {
+  text-align: center;
+}
+#footer .top .container .header p {
+  font-size: 10px;
+  line-height: 20px;
+}
+#footer .top .container .content {
+  padding-top: 30px;
+}
+#footer .top .container .content input {
+  padding-left: 20px;
+  border: none;
+  height: 40px;
+  width: 79%;
+  margin:0px;
+}
+#footer .top .container .content input[type="button"] {
+  padding: 0px;
+  width: 20%;
+}
+#footer .top .social {
+  width: 280px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+#footer .top .social a {
+  padding: 0 20px;
 }
 #footer .bottom {
   padding-top: 20px;
@@ -336,4 +426,62 @@ body {
 #footer .bottom .right {
   float: right;
   padding-right: 50px;
+}
+#place .container .content {
+  width: 960px;
+  padding-top: 45px;
+  margin: 0 auto;
+}
+#place .container .content .btn{
+  display: inline-block;
+  color: #aaa;
+  font-size: 10px;
+  line-height: 30px;
+  height: 30px;
+  width: 220px;
+  background: #BE4E48;
+  text-align: center;
+  letter-spacing: 30px;
+  text-indent: 30px;
+}
+#place .container .content .btn a{
+  text-decoration: none;
+  color: #fff;
+}
+#place .container .content .select {
+  padding-left: 10px;
+  display: inline-block;
+  margin-right: 20px;
+  color: #aaa;
+  font-size: 10px;
+  line-height: 30px;
+  height: 30px;
+  width: 220px;
+  background: url(../images/select.png) center right 10px no-repeat, #fff;
+}
+#place .container .content .select.active {
+  border: 1px solid #C07D75;
+}
+#place .content .select #country {
+  display: none;
+}
+#place .content .select #province {
+  margin-top: 0px;
+  margin-left: -11px;
+  width: 220px;
+  position: absolute;
+  color: #848585;
+  background: #E4E3E5;
+  border: 1px solid #C07D75;
+}
+#place .content .select #province li{
+  padding-left: 10px;
+  list-style: none;
+}
+#place .content .select ul li:hover{
+  background: #BF4F49;
+  color: white;
+}
+#place .content .select #city {
+  display: none;
 }
