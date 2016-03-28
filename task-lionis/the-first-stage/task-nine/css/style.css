@@ -1,0 +1,87 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border-box;
+  -webkit-wk-moz-box-sizing: border-box;
+  -moz-wk-moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  width: 1280px;
+}
+/* 头部部分 */
+#header {
+  height: 56px;
+  background: #2189BF;
+}
+#header nav .left {
+  float: left;
+}
+#header nav .left img {
+  padding-top: 10px;
+  padding-left: 50px;
+}
+#header nav .right {
+  float: right;
+}
+#header nav .right .content .search {
+  padding-top: 14px;
+  float: left;
+}
+#header nav .right .content input {
+  width: 312px;
+  border-radius: 20px;
+  height: 28px;
+  border: none;
+  background: #fff;
+  margin-right: 21px;
+  background: url(../images/header-search.png) center left 15px no-repeat, #fff;
+}
+#header nav .right .content .login {
+  float: left;
+  position: relative;
+  padding-right: 94px;
+}
+#header nav .right .content .login a{
+  padding-top: 22px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  float: left;
+}
+#header nav .right .content .login img{
+  padding-top: 20px;
+  display: block;
+  float: left;
+  padding-right: 3px;
+}
+#header nav .right .content a span{
+  background-image: url(../images/header-user.png);
+}
+
+/* 内容部分 */
+#container .left {
+  width: 260px;
+  height: 1210px;
+  background: #2A2E3D;
+}
+#container .left .header {
+  padding-top: 18px;
+  padding-left: 45px;
+}
+#container .left .header .head-portrait img{
+  border-radius: 50%;
+  padding: 1px;
+  border: 1px solid #fff;
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+}
+#container .left .header .head-portrait h2{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+  padding-left: 18px;
+  color: #fff;
+}
