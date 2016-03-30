@@ -111,7 +111,65 @@
       </div>
       <div class="content">
         <div class="select">
-
+          <div class="select-util select-util-item select-items">
+            <label for="items">查询项</label>
+            <select name="items">
+              <option value="1" selected="selected">第一项</option>
+              <option value="2">第一项</option>
+            </select>
+          </div>
+          <div class="select-util select-change">
+            <div class="select-buy select-util-item">
+              <label for="buy">买方</label>
+              <select name="buy">
+                <option value="1" selected="selected">小A</option>
+                <option value="2">小B</option>
+                <option value="3">小C</option>
+              </select>
+            </div>
+            <div class="select-sell select-util-item">
+              <label for="sell">卖方</label>
+              <select name="sell">
+                <option value="1">小A</option>
+                <option value="2">小B</option>
+                <option value="3" selected="selected">小C</option>
+              </select>
+            </div>
+            <img class="select-change-btn" src="./images/change.png" alt="交换按钮">
+          </div>
+          <div class="select-other">
+            <div class="select-util  select-date select-util-item">
+              <label for="time">日期</label>
+              <input type="text" name="time" value="2016-04-01">
+            </div>
+            <div class="select-util select-usetime select-util-item">
+              <label for="usertime">总耗时</label>
+              <select name="usertime">
+                <option value="1">8 天</option>
+                <option value="2">7 天</option>
+                <option value="3">6 天</option>
+              </select>
+            </div>
+            <div class="select-util select-people select-util-item">
+              <label for="people">人数</label>
+              <select name="people">
+                <option value="1">10 人</option>
+                <option value="2">11 人</option>
+                <option value="3">12 人</option>
+              </select>
+            </div>
+            <div class="select-util select-do select-util-item">
+              <label for="do">成交项</label>
+              <select name="do">
+                <option value="1">10 项</option>
+                <option value="2">11 项</option>
+                <option value="3">12 项</option>
+              </select>
+            </div>
+          </div>
+          <div class="select-search">
+            <input type="button" name="name" value="搜索">
+          </div>
         </div>
         <div class="money">
           <div class="go-btn"></div>
@@ -251,17 +309,137 @@
               </div>
               <div class="project-right-list list-people">
                 <h6>负责人</h6>
-                <p>小A</p>
+                <p>Kumamon Lionis</p>
               </div>
               <div class="project-right-list list-describe">
                 <h6>项目描述</h6>
                 <p>该项目目前负责人是熊本战队</p>
               </div>
               <div class="list-checked-search">
-                <input type="checkbox" checked>
+                <span class="checkbox"></span>
                 <span>遵守保密协议</span>
                 <input type="button" value="搜索">
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="calendar-carbrand">
+          <div class="calendar">
+            <div class="title">
+              <p>日历</p>
+            </div>
+            <div class="calendar-content">
+              <div class="time">
+                <div class="year">
+                  <select name="year">
+                    <option value="2016">2016年</option>
+                    <option value="2015">2015年</option>
+                  </select>
+                </div>
+                <div class="month">
+                  <select name="month">
+                    <option value="4">4月</option>
+                    <option value="3">3月</option>
+                    <option value="2">2月</option>
+                    <option value="1">1月</option>
+                  </select>
+                </div>
+                <div class="day">
+                  <select name="day">
+                    <option value="1">标注日期</option>
+                  </select>
+                </div>
+                <div class="btn">
+                  <input type="button" value="返回今天">
+                </div>
+              </div>
+              <div class="calendar-body">
+                <ul class="calendar-first">
+                  <li class="weekday">
+                    <ul class="calendar-second">
+                      <li>一</li>
+                      <li>二</li>
+                      <li>三</li>
+                      <li>四</li>
+                      <li>五</li>
+                      <li>六</li>
+                      <li>日</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="calendar-second">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li>
+                        <p class="num">1</p>
+                        <p class="char holiday">愚人节</p>
+                      </li>
+                      <li>
+                        <p class="num">2</p>
+                        <p class"char">廿五</p>
+                      </li>
+                      <li>
+                        <p class="num">3</p>
+                        <p class"char">廿五</p>
+                      </li>
+                      <li>
+                        <p class="num">4</p>
+                        <p class"char">廿五</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="calendar-second">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="calendar-second">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="calendar-second">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="calendar-second">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="carbrand">
+            <div class="title">
+              <p>汽车行业品牌榜</p>
             </div>
           </div>
         </div>

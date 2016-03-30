@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  border-box;
   -webkit-wk-moz-box-sizing: border-box;
   -moz-wk-moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -448,32 +447,218 @@ body {
   padding-bottom: 10px;
   border-bottom: 1px solid #EEEEEE;
 }
-#container .right .content .project .project-right .project-right-lists .project-right-list:after {
+#container .right .content .project .project-right .project-right-lists .project-right-list h6 {
+  color: #AAA;
+  padding-bottom: 5px;
+}
+
+#container .right .content .project .project-right .project-right-lists .project-right-list.list-people {
+  float: left;
+  width: 70%;
+}
+#container .right .content .project .project-right .project-right-lists .project-right-list.list-price {
+  border-right: 1px solid #EEEEEE;
+  float: left;
+  width: 30%;
+}
+#container .right .content .project .project-right .project-right-lists .project-right-list.list-describe {
+  width: 100%;
+  height: 150px;
+  clear: both;
+}
+#container .right .content .project .project-right .list-checked-search {
+
+  color: #aaa;
+  margin-top: 15px;
+  font-size: 12px;
+}
+#container .right .content .project .project-right .list-checked-search .checkbox {
+  vertical-align: middle;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  -webkit-appearance: none;
+  background: url(../images/checkbox.png) center no-repeat #d5d5d5;
+}
+#container .right .content .project .project-right .list-checked-search input[type="button"] {
+  margin-left: 150px;
+  border: none;
+  padding: 6px 13px;
+  color: #fff;
+  background: #388ac1;
+  border-radius: 5px 5px 5px 5px;
+}
+#container .right .content .select {
+  font-size: 12px;
+}
+#container .right .content .select label {
+  color: #CBCBCB;
+  padding-right: 10px;
+}
+#container .right .content .select select {
+  border: 1px solid #aaa;
+  border-radius: 0;
+  -webkit-appearance: none;
+  padding: 5px 20px 5px 5px;
+  background: url(../images/select-arrow.png) center right 5px no-repeat #fff;
+}
+#container .right .content .select .select-util {
+  margin-top: 15px;
+  float: left;
+}
+#container .right .content .select .select-items {
+  padding-left: 30px;
+}
+#container .right .content .select .select-items select {
+  width: 70px;
+}
+#container .right .content .select .select-change {
+  padding-left: 35px;
+  position: relative;
+  padding-right: 28px;
+}
+#container .right .content .select .select-change .select-change-btn{
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+#container .right .content .select .select-change select {
+  width: 120px;
+}
+#container .right .content .select .select-change .select-sell {
+  margin-top: 5px;
+}
+#container .right .content .select .select-date {
+  margin-left: 30px;
+}
+#container .right .content .select .select-date input {
+  border: 1px solid #aaa;
+  padding: 5px 5px 5px 5px;
+}
+#container .right .content .select .select-usetime {
+  padding-left: 10px;
+}
+#container .right .content .select .select-usetime select {
+  width: 70px;
+}
+#container .right .content .select .select-other {
+  width: 710px;
+}
+#container .right .content .select .select-people {
+  margin-top: 5px;
+  margin-left: 30px;
+}
+#container .right .content .select .select-people select {
+  width: 70px;
+}
+#container .right .content .select .select-do {
+  margin-top: 5px;
+  margin-left: 30px;
+}
+#container .right .content .select .select-do select {
+  width: 118px;
+}
+#container .right .content .select .select-search {
+  position: relative;
+}
+#container .right .content .select .select-search input[type="button"]{
+  border: 0px;
+  background: #388AC1;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  position: absolute;
+  margin: 30px;
+}
+
+#container .right .content .calendar-carbrand {
+  padding-top: 10px;
+  clear: both;
+}
+#container .right .content .calendar-carbrand .title p{
+  background: #F4F5F6;
+  height: 40px;
+  border-radius: 15px 15px 0 0;
+  font-size: 12px;
+  padding-top: 15px;
+  padding-left: 15px;
+  color: #AAA;
+}
+#container .right .content .calendar-carbrand .calendar,
+#container .right .content .calendar-carbrand .carbrand {
+  background: #fff;
+  height: 355px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  float: left;
+}
+#container .right .content .calendar-carbrand:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#container .right .content .calendar-carbrand .calendar {
+  width: 350px;
+  margin-right: 10px;
+}
+#container .right .content .calendar-carbrand .carbrand {
+  width: 544px;
+}
+#container .right .content .calendar-carbrand .calendar .time select {
+  -webkit-appearance: none;
+  border: 1px solid #aaa;
+  border-radius: 0px;
+  padding: 5px 15px 5px 5px;
+  float: left;
+  background: url(../images/calendar-arrow.png) center right 5px no-repeat #fff;
+  margin-right: 5px;
+}
+#container .right .content .calendar-carbrand .calendar .time .year select {
+  width: 65px;
+}
+#container .right .content .calendar-carbrand .calendar .time .month select {
+  width: 85px;
+}
+#container .right .content .calendar-carbrand .calendar .calendar-content{
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-right: 25px;
+}
+#container .right .content .calendar-carbrand .calendar .time input[type="button"] {
+  -webkit-appearance: none;
+  border: 1px solid #aaa;
+  background: #fff;
+  border-radius: 0px;
+  padding: 5px;
+  float: left;
+  width: 65px;
+}
+#container .right .content .calendar-carbrand .calendar .time:after {
   content: "";
   display: table;
   clear: both;
 }
-#container .right .content .project .project-right .project-right-lists .project-right-list h6{
-  color: #AAA;
-  padding-bottom: 5px;
+#container .right .content .calendar-carbrand .calendar .calendar-body .calendar-first {
+  margin-top: 10px;
+  list-style: none;
 }
-#container .right .content .project .project-right .project-right-lists .project-right-list.list-price,
-#container .right .content .project .project-right .project-right-lists .project-right-list.list-people {
+#container .right .content .calendar-carbrand .calendar .calendar-body .calendar-first li {
+}
+#container .right .content .calendar-carbrand .calendar .calendar-body .calendar-first li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#container .right .content .calendar-carbrand .calendar .calendar-body .calendar-first .weekday {
+  border-top: 1px solid #A9CFEC;
+  border-bottom: 1px solid #aaa;
+  padding: 10px 0;
+}
+#container .right .content .calendar-carbrand .calendar .calendar-body .calendar-first .weekday li {
+  padding-left: 13.4px;
+  padding-right: 13.4px;
+}
+#container .right .content .calendar-carbrand .calendar .calendar-body .calendar-second li {
   float: left;
-  width: 50%;
-}
-#container .right .content .project .project-right .project-right-lists .project-right-list.list-describe{
-  float: left;
-  width: 100%;
-  height: 150px;
-}
-#container .right .content .project .project-right .list-checked-search {
-  width: inherit;
-  font-size: 12px;
-  color: #aaa;
-}
-#container .right .content .project .project-right .list-checked-search {
-  width: inherit;
-  font-size: 12px;
-  color: #aaa;
+  list-style: none;
 }
