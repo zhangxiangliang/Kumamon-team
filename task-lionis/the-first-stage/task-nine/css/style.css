@@ -655,10 +655,84 @@ body {
   padding: 10px 0;
 }
 #container .right .content .calendar-carbrand .calendar .calendar-body .calendar-first .weekday li {
-  padding-left: 13.4px;
-  padding-right: 13.4px;
+  padding-left: 13px;
+  padding-right: 13px;
+  display: inline-block;
+  list-style: none;
+  font-size: 12px;
+}
+#container .right .content .calendar-carbrand .calendar .calendar-body .calendar-second {
+  padding-bottom: 3px;
 }
 #container .right .content .calendar-carbrand .calendar .calendar-body .calendar-second li {
-  float: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline-block;
   list-style: none;
+  text-align: center;
+  width: 39px;
+  font-size: 12px;
+}
+#container .right .content .calendar-carbrand .calendar .calendar-body .calendar-second li .holiday{
+  color: red;
+}
+#container .right .content .calendar-carbrand .calendar .calendar-body .calendar-second .yellow {
+  border: 1px solid #F8D564;
+}
+#container .right .content .calendar-carbrand .calendar .calendar-body .calendar-second li .char {
+  padding-top: 5px;
+}
+#container .right .content .calendar-carbrand .carbrand table {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 18px;
+  font-size: 12px;
+  line-height: 24px;
+  border-collapse: collapse;
+  text-align: center;
+}
+#container .right .content .calendar-carbrand .carbrand table thead th {
+  border: 1px solid #c3c4c4;
+  line-height: 26px;
+}
+#container .right .content .calendar-carbrand .carbrand table tbody td {
+  border: 1px solid #c3c4c4;
+}
+#container .right .content .calendar-carbrand .carbrand table thead th.table-len-one {
+  width: 60px;
+}
+#container .right .content .calendar-carbrand .carbrand table thead th.table-len-two {
+  width: 90px;
+}
+#container .right .content .calendar-carbrand .carbrand table thead th.table-len-three {
+  width: 310px;
+  text-align: left;
+  padding-left: 20px;
+}
+#container .right .content .calendar-carbrand .carbrand .search-num {
+  text-align: left;
+  padding-left: 20px;
+}
+#container .right .content .calendar-carbrand .carbrand .carbrand-background {
+  background-color: #dcdcdc;
+  width: 180px;
+  height: 4px;
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+#container .right .content .calendar-carbrand .carbrand .carbrand-color {
+  height: 4px;
+  display: block;
+  vertical-align: middle;
+  position: relative;
+}
+#container .right .content .calendar-carbrand .carbrand .carbrand-color.red{
+  background: #EC6D51;
+}
+#container .right .content .calendar-carbrand .carbrand .carbrand-color.orange{
+  background: #F19E4F;
+}
+#container .right .content .calendar-carbrand .carbrand .carbrand-color.blue{
+  background: #7FCBF0;
 }
