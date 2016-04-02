@@ -1,0 +1,40 @@
+.father {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.father div {
+  width: 150px;
+  margin: 20px;
+}
+.child-1 {
+  height: 120px;
+  order: 1;
+}
+.child-2 {
+  height: 100px;
+  order: 2;
+}
+.child-3 {
+  height: 40px;
+  order: 3;
+}
+.child-4 {
+  height: 200px;
+  order: 4;
+}
+.red {
+  border: 1px solid #f00;
+}
+.blue {
+  border: 1px solid #00f;
+}
+@media all and (max-width: 640px) {
+  .child-4 {
+    order: -1;
+  }
+  .father {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
