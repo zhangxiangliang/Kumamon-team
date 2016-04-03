@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-wk-moz-box-sizing: border-box;
+  -moz-wk-moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+body {
+}
+/* table */
+table {
+  border: 1px solid white;
+}
+table thead tr {
+  background: black;
+  color: #fff;
+}
+table tbody tr:nth-child(-n+3) {
+  color: red;
+}
+table tbody tr:nth-child(even) {
+  background: #dfdfdf;
+}
+/* input */
+input[type="text"] {
+  width: 100px;
+  height: 20px;
+  transition: width 2s;
+}
+input[type="text"]:focus {
+  width: 200px;
+}
+
+.carrousel{
+  width: 300px;
+  height: 100px;
+}
+.banner{width: 300px; height: 100px; position: relative; overflow:hidden;margin-bottom: 30px;}
+.banner .banner_show{width: 300%; height: 100%;position:absolute;left:0;top:0;animation:banner 8s infinite;}
+.banner .banner_show li{ width: 300px;height: 100px;float: left;}
+.banner .banner_show li:nth-of-type(1){ background: red;}
+.banner .banner_show li:nth-of-type(2){ background: blue;}
+.banner .banner_show li:nth-of-type(3){ background: green;}
+.banner ol{ width: 100px;height: 30px;position:absolute;right:0;bottom:0;}
+.banner ol li{ width: 30px;height: 30px;float: left;background: rgba(255,255,255,0.5);font-size: 14px;text-align: center;line-height: 30px;cursor: pointer;}
+.banner ol li:nth-of-type(2){margin: 0 5px;}
