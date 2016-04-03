@@ -1,0 +1,232 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-wk-moz-box-sizing: border-box;
+  -moz-wk-moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+a, img {
+  -webkit-touch-callout: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+html, body {
+  margin: 0 auto;
+  background: #f2f2f2;
+}
+/* 头部 */
+.header {
+  background: #80cbd1;
+  color: #fff;
+  height: 46px;
+  line-height: 46px;
+  position: relative;
+  text-align: center;
+}
+.header a{
+  color: #fff;
+}
+.header .header-title {
+  vertical-align: middle;
+}
+.header .header-back {
+  position: absolute;
+  left: 15px;
+}
+.header .header-back .header-back-icon,
+.header .header-back .header-back-word {
+  font-size: 16px;
+}
+
+.header .header-title h1{
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+}
+/* 导航 */
+.nav {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+}
+.nav .nav-item {
+  height: 46px;
+  line-height: 46px;
+  flex-grow: 1;
+}
+.nav .nav-item a {
+  font-size: 15px;
+  color: #000;
+}
+.nav .nav-item-active {
+  border-bottom: 2px solid #80cbd1;
+}
+.nav .nav-item:hover {
+  border-bottom: 2px solid #80cbd1;
+}
+/* 封面 */
+.cover img{
+  width: 100%;
+}
+/* 标签 */
+.tag {
+  background: #fff;
+  margin-top: -2px;
+  padding-top: 30px;
+  text-align: center;
+  height: 160px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.tag::after {
+  content: "";
+  bottom: 0;
+  left: 2%;
+  width: 96%;
+  position: absolute;
+  display: block;
+  border-bottom: 2px solid #DFDFDF;
+}
+.tag .tag-item {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+.tag .tag-item span {
+  padding: 10px;
+  display: block;
+}
+.tag .tag-item img {
+  width: 65px;
+  height: 65px;
+}
+/* 分栏 col */
+.col {
+  height: 230px;
+  display: flex;
+  padding-top: 30px;
+  background: #fff;
+  padding-bottom: 30px;
+}
+.col .col-item {
+  height: 180px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-right: 1px solid #DFDFDF;
+}
+.col .col-item:last-child {
+  border-right: none;
+}
+.col img {
+  width: 60%;
+}
+.col .col-item .col-item-img {
+  height: 100px;
+}
+.col .col-item h2,
+.col .col-item h3 {
+  padding-top: 12px;
+}
+.col .col-item h2 {
+  font-size: 16px;
+}
+/* 模块 */
+.mod {
+  margin-top: 15px;
+  background: #fff;
+  padding-bottom: 10px;
+}
+.mod .mod-title {
+  padding: 20px 0 20px 20px;
+  margin-bottom: 12px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-weight: normal;
+  font-size: 18px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.mod .mod-item {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+}
+.mod .mod-item img{
+  width: 10rem;
+}
+.mod .mod-item .mod-item-img {
+  margin-right: 10px;
+}
+.mod .mod-item .mod-item-col {
+  margin-bottom: 10px;
+}
+.mod .mod-item .mod-item-col p{
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 8rem;
+  height: 55px;
+  font-size: 16px;
+  line-height: 55px;
+  background: #dfdfdf;
+}
+/* 文章 */
+.article {
+  margin-top: 15px;
+  background: #fff;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+.article .article-text,
+.article .article-images {
+  padding-top: 15px;
+}
+.article .article-text {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.article .article-text .article-item-img {
+  width: 12rem;
+}
+.article .article-text .article-item-img img{
+  width: 12rem;
+}
+.article .article-text .article-item-content {
+  padding-left: 10px;
+  position: relative;
+}
+.article .article-text .article-item-content h2,
+.article .article-images h2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+.article .article-text .article-item-content .article-item-content-bottom {
+  position: absolute;
+  bottom: 5px;
+  color: #aaa;
+}
+.article .article-images .article-item-img img{
+  width: 30%;
+}
+.article .article-item-content-bottom {
+  padding-top: 10px;
+  color: #aaa;
+}
